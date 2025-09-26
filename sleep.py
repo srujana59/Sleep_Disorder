@@ -14,7 +14,8 @@ except FileNotFoundError:
     st.stop()
 # Define the label encoder for decoding predictions
 label_encoder = LabelEncoder()
-label_encoder.classes_ = np.array(['Insomnia', 'Sleep Apnea', 'None'])  # Adjust based on notebook's encoding
+label_encoder.classes_ = np.array(['Insomnia', 'Sleep Apnea', 'None'])
+  # Adjust based on notebook's encoding
 # Sidebar for user inputs
 st.sidebar.header("Enter Patient Details")
 # Numerical features
@@ -99,7 +100,8 @@ if st.sidebar.button("Predict"):
     except Exception as e:
         st.error(f"Error making prediction: {str(e)}")
 # Display instructions
-st.write("""
+st.write
+("""
 ### Instructions
 1. Use the sidebar to enter the patient's details.
 2. Adjust the sliders for numerical features like Age, Sleep Duration, etc.
